@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/profile_nav"
+            android:icon="@drawable/ic_person_black_36dp"
+            android:title="Profile" />
+        <item
+            android:id="@+id/clans_nav"
+            android:icon="@drawable/ic_gavel_black_36dp"
+            android:title="Clans" />
+        <item
+            android:id="@+id/contacts_nav"
+            android:icon="@drawable/ic_contacts_black_36dp"
+            android:title="Messages and Contacts" />
+
+        <item
+            android:id="@+id/suggestion_nav"
+            android:icon="@drawable/ic_fiber_new_black_36dp"
+            android:title="Submit Suggestions" />
+
+
+    </group>
+
+    <item android:title="Communicate">
+
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_webportal"
+                android:icon="@drawable/ic_https_black_36dp"
+                android:title="LFG Web Portal" />
+
+            <item
+                android:id="@+id/nav_share_app"
+                android:icon="@drawable/ic_share_black_36dp"
+                android:title="Share App" />
+
+            <item
+                android:id="@+id/nav_rate_app"
+                android:icon="@drawable/ic_thumbs_up_down_black_36dp"
+                android:title="Rate App" />
+
+            <item
+                android:id="@+id/jpstudios_action"
+                android:icon="@drawable/ic_language_black_36dp"
+                android:title="JPStudiosonline" />
+
+
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help_black_36dp"
+                android:title="Help" />
+
+        </menu>
+    </item>
+
+</menu>

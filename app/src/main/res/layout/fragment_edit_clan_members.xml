@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jpstudiosonline.goodgamer.userAppArea.tabFragments.DashBoardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editing Clan members:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingTop="5dp">
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/gameSelectRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:orientation="vertical"
+            android:scrollbarSize="20dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

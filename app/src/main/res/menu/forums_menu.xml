@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_open_browser"
+        android:title="Forward"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_open_in_browser_white_36dp"/>
+
+    <item
+        android:id="@+id/action_action_forums_go_back"
+        android:title="Back"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_arrow_back_white_36dp"/>
+
+    <item
+        android:id="@+id/action_forums_go_forward"
+        android:title="Forward"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_arrow_forward_white_36dp"/>
+
+
+</menu>

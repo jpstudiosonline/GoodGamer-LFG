@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_lfg_edit_post"
+        android:icon="@drawable/ic_edit_white_24dp"
+        android:title="Edit Post"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_lfg_delete_post"
+        android:icon="@drawable/ic_done_white_36dp"
+        android:title="Delete Post"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_lfg_view_profile"
+        android:icon="@drawable/ic_done_white_36dp"
+        android:title="View Profile"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_lfg_report_post"
+        android:icon="@drawable/ic_done_white_36dp"
+        android:title="Report"
+        app:showAsAction="never"/>
+
+</menu>

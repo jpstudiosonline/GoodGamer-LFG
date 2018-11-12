@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jpstudiosonline.goodgamer.userAppArea.tabFragments.DashBoardFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clan Name:"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Clan Name"
+            android:id="@+id/etClanNameAndTitle"
+            android:singleLine="true"
+            android:maxLength="80"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message of the day:"
+            android:textSize="20dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mesage of the day."
+            android:id="@+id/etClanMessageOfDay"
+            android:singleLine="true"
+            android:maxLength="80"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clan Logo, must be 36x36 and PNG format."
+            android:textSize="20dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Logo URL"
+            android:id="@+id/etClanLogoURL"
+            android:inputType="textUri"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clan Description and info:"
+            android:textSize="20dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:id="@+id/etClanDescription"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Submit update"
+            android:id="@+id/btSubmitClanInfoUpdate"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

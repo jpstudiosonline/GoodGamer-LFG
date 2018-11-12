@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="coffeeMenu">
+        <item>Filter</item>
+        <item>Americano</item>
+        <item>Latte</item>
+        <item>Expresso</item>
+        <item>Cappucino</item>
+        <item>Mocha</item>
+        <item>Skinny Latte</item>
+        <item>Expresso Corretto</item>
+    </string-array>
+</resources>

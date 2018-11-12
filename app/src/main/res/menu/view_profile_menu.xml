@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_message_user"
+        android:title="Message User"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_message_white_36dp"/>
+
+    <item
+        android:id="@+id/action_add_contact"
+        android:title="Add to Contact"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_person_add_white_36dp"/>
+
+    <item
+        android:id="@+id/action_edit_profile"
+        android:title="Profile"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_create_white_36dp"/>
+
+    <item
+        android:id="@+id/action_view_profile_replies"
+        android:title="View Comments"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_view_profile_requests"
+        android:title="View Requests"
+        app:showAsAction="never"/>
+
+</menu>

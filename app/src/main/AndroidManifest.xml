@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jpstudiosonline.goodgamer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- GCM permissions -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="net.simplifiedcoding.androidgcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.jpstudiosonline.goodgamer.userAppArea.Notifications.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".userLogin.userLoginActivities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".userLogin.userLoginActivities.RegisterActivity"
+            android:excludeFromRecents="false"
+            android:label="Register User"
+            android:parentActivityName=".userLogin.userLoginActivities.LoginActivity" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".userAppArea.UserAreaActivity" />
+        <activity
+            android:name=".userAppArea.tabFragments.LfgActivities.ViewLfgRequestActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".userAppArea.tabFragments.LfgActivities.CreateLfgRequestActivity"
+            android:excludeFromRecents="true"
+            android:parentActivityName=".userAppArea.UserAreaActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".userAppArea.tabFragments.LfgActivities.SelectionsActivities.SelectGameListActtivity" />
+        <activity android:name=".userAppArea.tabFragments.LfgActivities.SelectionsActivities.SelectGroupListActivity" />
+        <activity android:name=".userAppArea.tabFragments.LfgActivities.SelectionsActivities.SelectConsoleListActivity" />
+        <activity
+            android:name=".userAppArea.tabFragments.UserMenuActivities.ForumsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".userAppArea.tabFragments.LfgActivities.SelectionsActivities.ReplyLfgRequestActivity"
+            android:excludeFromRecents="true" />
+        <activity
+            android:name=".userAppArea.tabFragments.LfgActivities.SelectionsActivities.EditLfgRequestActivity"
+            android:excludeFromRecents="true" />
+        <activity
+            android:name=".userAppArea.tabFragments.UserProfileActivity"
+            android:excludeFromRecents="true" />
+
+        <!-- GCM Receiver -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.gnirt69.gcmexample" />
+            </intent-filter>
+        </receiver>
+
+        <!-- GCM Receiver Service -->
+        <service
+            android:name=".userAppArea.Notifications.GCMPushReceiverService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <!-- GCM Registration Intent Service -->
+        <service
+            android:name=".userAppArea.Notifications.GCMRegistrationIntentService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".userAppArea.tabFragments.GameActivities.SelectGameActivity"
+            android:excludeFromRecents="true" />
+        <activity
+            android:name=".userAppArea.tabFragments.GameRequestsActivity"
+            android:excludeFromRecents="true" />
+        <activity android:name=".userAppArea.tabFragments.UserMenuActivities.EditProfileActivity" />
+        <activity android:name=".userAppArea.tabFragments.UserMenuActivities.ViewUserComments" />
+        <activity android:name=".userAppArea.tabFragments.UserMenuActivities.SuggestionsActivity" />
+        <activity
+            android:name=".userLogin.userLoginActivities.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".userAppArea.tabFragments.LfgActivities.SelectionsActivities.EditReplyActivity" />
+        <activity android:name=".userAppArea.Clans.ClansAreaActivity" />
+        <activity android:name=".userAppArea.Clans.ViewClanAreaActivity" />
+        <activity
+            android:name=".userAppArea.Clans.ClanGames.SelectClanGameActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".userAppArea.Clans.ClanManager.ClanManagerAreaActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".userAppArea.ChatMessages.ChatAreaActivity" />
+        <activity android:name=".userAppArea.ChatMessages.SendMessagesActivity"></activity>
+    </application>
+
+</manifest>

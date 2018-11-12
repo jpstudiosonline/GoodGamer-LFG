@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/groupUpVoteLayout">
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/ic_thumb_up_black_18dp"
+                    android:id="@+id/btRequestUpVoteButton"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textSize="15dp"
+                android:text="Kodus"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textSize="15dp"
+                android:paddingBottom="5dp"
+                android:text="total: "
+                android:id="@+id/tvGroupFindingTotalVotes"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/groupDownVoteLayout">
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/ic_thumb_down_black_18dp"
+                    android:id="@+id/btRequestDownVoteButton"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/groupRequestLayout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvRequestGameName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColorHighlight="@android:color/primary_text_dark"
+                    android:text="aaaa"
+                    android:layout_alignParentTop="true" />
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvRequestTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/tvRequestDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/tvRequestUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3F51B5"
+                    android:text="hhhh"
+                    android:textStyle="bold"
+                    android:textSize="15dp" />
+
+                <!--requestime-->
+
+                <TextView
+                    android:id="@+id/tvRequestGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="aaa"
+                    android:textStyle="bold"
+                    android:textColorHighlight="@android:color/primary_text_dark"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="comment count"
+                    android:id="@+id/tvRequestCommentCount"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/requestTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:text="tt"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
